@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* =========================
+   Modern CSS Reset (Short)
+   ========================= */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   Design System: Color Palette
+   ========================= */
+:root {
+  /* Slate Colors */
+  --slate-900: #1F314F;
+  --slate-500: #68778D;
+  --slate-300: #D5E1EF;
+  --white: #FFFFFF;
+
+  /* Typography */
+  --font-family-base: 'Outfit', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --text-preset1-size: 22px;
+  --text-preset1-line-height: 1.2;
+  --text-preset1-letter-spacing: 0px;
+  --text-preset2-size: 15px;
+  --text-preset2-line-height: 1.4;
+  --text-preset2-letter-spacing: 0.2px;
+
+  /* Spacing (only used values) */
+  --space-800: 40px;
+  --space-600: 24px;
+  --space-500: 20px;
+  --space-400: 16px;
+  --space-300: 12px;
+
+  /* Border radius */
+  --border-radius-500: 20px;
+  --border-radius-300: 16px;
+  --border-radius-200: 12px;
+  --border-radius-100: 10px;
+
+  /* Box shadow (only used value) */
+  --box-shadow-500: 0px 25px 25px 0px rgba(0, 0, 0, 0.0477);
+}
+
+body {
+  background-color: var(--slate-300);
+  font-family: var(--font-family-base);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius-500);
+  width: 100%;
+  max-width: 320px;
+  box-shadow: var(--box-shadow-500);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: var(--space-400);
+  padding: var(--space-500);
+  box-sizing: border-box;
+}
+
+.qr-code-image {
+  width: 100%;
+  max-width: 288px;
+  max-height: 288px;
+  height: auto;
+  border-radius: var(--border-radius-100);
+  box-shadow: 0 4px 16px rgba(31,49,79,0.08);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-400);
+  padding-left: var(--space-400);
+  padding-right: var(--space-400);
+}
+
+.text h1 {
+  font-size: var(--text-preset1-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--slate-900);
+  line-height: var(--text-preset1-line-height);
+  letter-spacing: var(--text-preset1-letter-spacing);
+}
+
+.text p { 
+  font-size: var(--text-preset2-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--slate-500);
+  line-height: var(--text-preset2-line-height);
+  letter-spacing: var(--text-preset2-letter-spacing);
+}
+
+.attribution {
+  font-size: var(--text-preset2-size);
+  text-align: center;
+  margin-top: var(--space-800);
+  color: var(--slate-500);
+  width: 100%;
+  max-width: 350px;
+  align-self: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .qr-card {
+    max-width: 320px;
+    width: 100%;
+    padding: var(--space-400);
+    gap: var(--space-600);
+    padding-bottom: var(--space-800);
+  }
+  .qr-code-image {
+    max-width: 288px;
+    max-height: 288px;
+  }
+  .attribution {
+    font-size: 12px;
+    margin-top: var(--space-400);
+    max-width: 95vw;
+  }
+}
+
+@media (min-width: 376px) {
+  .qr-card {
+    max-width: 320px;
+    width: 100%;
+    padding: var(--space-400);
+    gap: var(--space-600);
+  }
+  .qr-code-image {
+    max-width: 288px;
+    max-height: 288px;
+  }
+}
+
+
