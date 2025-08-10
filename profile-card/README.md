@@ -124,7 +124,7 @@ Moving forward, I plan to focus on:
 
 - Frontend Mentor - [@mzamaann-dev](https://www.frontendmentor.io/profile/mzamaann-dev)
 - GitHub - [@mzamaaann-dev](https://github.com/mzamaaann-dev)
-- LinkedIn - [Muhammad Zaman](https://linkedin.com/in/yourprofile)
+- LinkedIn - [Muhammad Zaman](https://linkedin.com/in/mzamaann)
 
 ---
 
