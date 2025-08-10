@@ -33,8 +33,8 @@ The screenshot shows the completed social links profile card with Jessica Randal
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Profile Card](https://github.com/mzamaann-dev/CodeMentor/tree/master/profile-card)
+- Live Site URL: [Live URL](https://mzamaann-dev.github.io/CodeMentor/profile-card/)
 
 ## My process
 

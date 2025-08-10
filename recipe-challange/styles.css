@@ -1,0 +1,422 @@
+/* ==========================================================================
+   Recipe Page Styles
+   ========================================================================== */
+
+/* CSS Custom Properties (Design Tokens) */
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-brown-800: hsl(14, 45%, 36%);
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+
+  /* Typography */
+  --font-family-primary: 'Young Serif', serif;
+  --font-family-secondary: 'Outfit', sans-serif;
+  --font-size-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-0: 0rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-2xl: 3rem;
+
+  /* Layout */
+  --container-max-width: 1440px;
+  --container-mobile: 375px;
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6;
+  color: var(--color-stone-600);
+  background-color: var(--color-stone-100);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-stone-900);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: var(--color-brown-800);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ==========================================================================
+   Layout Components
+   ========================================================================== */
+
+.container {
+  max-width: var(--container-mobile);
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.recipe-card-header-image {
+  padding: var(--spacing-0);
+}
+
+.recipe-card-content {
+  padding: var(--spacing-0) var(--spacing-lg);
+}
+
+/* ==========================================================================
+   Image Styles
+   ========================================================================== */
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   Section Styles
+   ========================================================================== */
+
+.section {
+  margin-bottom: var(--spacing-md);
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Recipe Header Styles
+   ========================================================================== */
+
+.recipe-header {
+  margin-top: var(--spacing-lg);
+}
+
+.recipe-header {
+  padding: var(--spacing-xs) var(--spacing-lg);
+}
+
+/* ==========================================================================
+   Preparation Time Section
+   ========================================================================== */
+
+.prep-time {
+  background-color: var(--color-rose-50);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-lg) 0;
+}
+
+.prep-time h3 {
+  color: var(--color-rose-800);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.prep-time ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prep-time li {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: var(--spacing-xs);
+  padding-left: var(--spacing-md);
+  position: relative;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.prep-time li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-rose-800);
+  border-radius: 50%;
+}
+
+.prep-time strong {
+  color: var(--color-stone-900);
+  font-weight: var(--font-weight-semibold);
+  margin-right: var(--spacing-xs);
+}
+
+/* ==========================================================================
+   Ingredients Section
+   ========================================================================== */
+
+.ingredients ul {
+  list-style: none;
+  padding-left: var(--spacing-md);
+  
+}
+
+.ingredients li {
+  padding: var(--spacing-xs) 0;
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.ingredients li:last-child {
+  border-bottom: none;
+}
+
+.ingredients li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-brown-800);
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   Instructions Section
+   ========================================================================== */
+
+.instructions ol {
+  list-style: decimal;
+  padding-left: var(--spacing-lg);
+  counter-reset: none;
+}
+
+.instructions li {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--color-stone-150);
+  position: relative;
+}
+
+.instructions li:last-child {
+  border-bottom: none;
+}
+
+.instructions li::marker {
+  color: var(--color-brown-800);
+  font-weight: var(--font-weight-bold);
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   Nutrition Section
+   ========================================================================== */
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-md) 0;
+}
+
+.nutrition-table tr {
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.nutrition-table tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition-table td {
+  padding: var(--spacing-sm) 0;
+  vertical-align: middle;
+}
+
+.nutrition-table td:first-child {
+  padding-left: var(--spacing-lg);
+}
+
+.nutrition-table td:last-child {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brown-800);
+}
+
+/* ==========================================================================
+   Attribution
+   ========================================================================== */
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-top: var(--spacing-lg);
+  color: var(--color-stone-600);
+}
+
+.attribution a {
+  color: var(--color-brown-800);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    margin: 0 auto;
+  }
+
+  
+
+  .recipe-card-header {
+    padding: var(--spacing-0);
+  }
+
+  .recipe-card-header-image{
+    padding: var(--spacing-lg);
+    padding-bottom: var(--spacing-0);
+  }
+  
+  .recipe-image{
+    border-radius: var(--border-radius);
+  }
+
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .recipe-card-header {
+    padding: var(--spacing-0);
+  }
+
+  .recipe-card-header-image{
+    padding: var(--spacing-lg);
+    padding-bottom: var(--spacing-0);
+  }
+  
+  .recipe-image{
+    border-radius: var(--border-radius);
+  }
+
+}
+
+/* ==========================================================================
+   Accessibility Enhancements
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus styles for better accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid var(--color-brown-800);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-stone-100: hsl(0, 0%, 95%);
+    --color-stone-150: hsl(0, 0%, 90%);
+    --color-stone-600: hsl(0, 0%, 20%);
+    --color-stone-900: hsl(0, 0%, 10%);
+  }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  body {
+    background-color: var(--color-white);
+    color: var(--color-stone-900);
+  }
+
+  .container {
+    box-shadow: none;
+    border: 1px solid var(--color-stone-150);
+  }
+
+  .attribution {
+    display: none;
+  }
+}

@@ -17,8 +17,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://github.com/mzamann1/CodeMentor/tree/master/qr-code-componet-challenge-1](https://github.com/mzamann1/CodeMentor/tree/master/qr-code-componet-challenge-1)
-- Live Site URL: [https://mzamann1.github.io/CodeMentor/qr-code-componet-challenge-1/](https://mzamann1.github.io/CodeMentor/qr-code-componet-challenge-1/)
+- Solution URL: [https://github.com/mzamaann-dev/CodeMentor/tree/master/qr-code-componet-challenge-1](https://github.com/mzamaann-dev/CodeMentor/tree/master/qr-code-componet-challenge-1)
+- Live Site URL: [https://mzamaann-dev.github.io/CodeMentor/qr-code-componet-challenge-1/](https://mzamaann-dev.github.io/CodeMentor/qr-code-componet-challenge-1/)
 
 
 ### Built with
@@ -44,8 +44,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Website - [Muhammad Zaman](https://github.com/mzamann1/)
-- Frontend Mentor - [@mzamann1](https://www.frontendmentor.io/profile/mzamann1)
+- Website - [Muhammad Zaman](https://github.com/mzamaann-dev/)
+- Frontend Mentor - [@mzamaann-dev](https://www.frontendmentor.io/profile/mzamaann-dev)
 
 ## Acknowledgments
 
