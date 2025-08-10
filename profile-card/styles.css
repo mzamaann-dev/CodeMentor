@@ -1,0 +1,186 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root variables for colors and typography */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  
+  --font-family: 'Inter', sans-serif;
+  --font-size-body: 14px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  color: var(--white);
+  background-color: var(--grey-900);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main container */
+.profile-card {
+  background-color: var(--grey-800);
+  border-radius: 12px;
+  padding: 40px 24px;
+  text-align: center;
+  max-width: 327px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile image */
+.profile-image {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+  display: block;
+  border: 2px solid var(--green);
+}
+
+/* Profile name */
+.profile-name {
+  font-size: 24px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+/* Profile location */
+.profile-location {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  color: var(--green);
+  margin-bottom: 24px;
+}
+
+/* Profile bio */
+.profile-bio {
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--white);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* Social links container */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Social link buttons */
+.social-link {
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: var(--font-weight-semibold);
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--green);
+  color: var(--grey-900);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(117, 255, 0, 0.3);
+}
+
+.social-link:active {
+  transform: translateY(0);
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 40px;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .profile-card {
+    max-width: 384px;
+    padding: 40px;
+  }
+  
+  .profile-image {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 24px;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+  }
+  
+  .profile-location {
+    font-size: 14px;
+  }
+  
+  .profile-bio {
+    font-size: 14px;
+  }
+  
+  .social-link {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Focus styles for accessibility */
+.social-link:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .social-link {
+    transition: none;
+  }
+  
+  .social-link:hover {
+    transform: none;
+  }
+}
