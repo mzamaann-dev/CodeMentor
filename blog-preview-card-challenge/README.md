@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/mzamann1/CodeMentor/tree/master/blog-preview-card-challenge](https://github.com/mzamann1/CodeMentor/tree/master/blog-preview-card-challenge)
-- Live Site URL: [https://mzamann1.github.io/CodeMentor/blog-preview-card-challenge/](https://mzamann1.github.io/CodeMentor/blog-preview-card-challenge/)
+- Solution URL: [https://github.com/mzamaann-dev/CodeMentor/tree/master/blog-preview-card-challenge](https://github.com/mzamaann-dev/CodeMentor/tree/master/blog-preview-card-challenge)
+- Live Site URL: [https://mzamaann-dev.github.io/CodeMentor/blog-preview-card-challenge/](https://mzamaann-dev.github.io/CodeMentor/blog-preview-card-challenge/)
 
 ## My process
 
@@ -53,8 +53,8 @@ In future projects, I want to continue improving:
 
 ## Author
 
-- Website - [Muhammad Zaman](https://github.com/mzamann1/)
-- Frontend Mentor - [@mzamann1](https://www.frontendmentor.io/profile/mzamann1)
+- Website - [Muhammad Zaman](https://github.com/mzamaann-dev/)
+- Frontend Mentor - [@mzamaann-dev](https://www.frontendmentor.io/profile/mzamaann-dev)
 
 
 ## Acknowledgments
